@@ -1,11 +1,11 @@
 # La pobreza mas alla de lo economico
 
-Introducción
+## Introducción
 
 En la actualidad México sufre de un elevado número de carencias, pero ninguna de ellas se compara con la profunda crisis de pobreza que se ha experimentado en la época contemporánea. La medición oficial de la pobreza en el país la realiza el Consejo Nacional de Evaluación de la Política de Desarrollo Social (Coneval), y según su estudio más reciente el 43.9% de la población mexicana vive en pobreza, y el 8.5% de la población, es decir, casi 6.6 millones de personas viven en pobreza extrema.  (Coneval, 2022). El problema de la pobreza va más allá de lo económico, y es por eso que, México, es el primer país en el mundo en tener una medición que utiliza un sistema multidimensional, así, la pobreza que padecen las personas no solo se refleja en el ingreso, sino también en la carencia de derechos sociales que debe otorgar el Estado mexicano a sus ciudadanos. Por una parte, la dimensión del bienestar económico comprende la capacidad adquisitiva de bienes y servicios asociados a las necesidades de la población mediante el ingreso, y, por otra parte, la dimensión social, incluye 6 indicadores de acceso a: servicios de salud, seguridad social, servicios básicos, calidad y espacios de la vivienda, educación y alimentación. 
 El trabajo expuesto en el presente se realizó con la intención de lograr una mejor comprensión de la problemática, con el principal objetivo de demostrar la multidimensionalidad de la pobreza, y el uso de la ubicación geográfica como herramienta para la medición y predicción de la misma. En las siguientes páginas se expone la descripción del trabajo realizado, el análisis visual de la problemática que incluye las visualizaciones obtenidas y los hallazgos más relevantes de los datasets examinados, y, finalmente, las conclusiones sobre la investigación que se llevó a cabo, así como una propuesta de proyecto para comenzar a combatir la agravante situación de pobreza del país a través de la ciencia de datos.
 
-Descripción del trabajo
+## Descripción del trabajo
 
 El proyecto se realizó en dos fases: investigación/recaudación de datos e implementación de visualizaciones.
 Investigación/ recaudación de datos
@@ -40,7 +40,7 @@ Shiny
 Shinydashboard
 Se implementation distintos tipos de gráficos: bar charts, leaflets, choropleths y redes multicapas. Finalmente para la presentación de las visualizaciones obtenidas se hizo uso de la herramienta Shiny. Con Shiny se implementó el dashboard que contiene la presentación final del trabajo realizado, y cuenta con interactividad para manipular algunas visualizaciones.
 
-Análisis visual
+## Análisis visual
 
 Se realizaron dos bar charts sobre los indicadores de la pobreza para contextualizar el  aspecto multidimensional de la misma. A la izquierda se encuentra el porcentaje de la población con carencias de derechos sociales y a la derecha indicadores económicos. En ambos se incluye el número promedio de carencias en rojo de cada grupo que se muestra en las gráficas. 
 
@@ -56,7 +56,7 @@ Pasando al análisis geográfico de la medición que tiene que ver con el acceso
 
 Finalmente, se realizó un análisis de redes multicapa donde hay 7 capas que representan las variables analizadas en el trabajo: por la parte económica el pib per cápita, y por la parte social los 6 indicadores sociales previamente mencionados. Los vértices representan las 10 entidades federativas que peor se desempeñan en cada uno de los 7 rubros. En la segunda gráfica se muestra una detección de comunidades muy interesante que apoya la idea mencionada anteriormente sobre la relación geográfica y la configuración de México, pues cada arista representa estados que colindan uno con el otro. Finalmente, se muestra una matriz que representa la comparación de las 7 capas, obteniendo como resultado valores numéricos que van del 0 al 1. El valor 0 significa que no hay ninguna relación entre la comparación capa a capa, mientras que 1 significa que las capas son idénticas. Esto lo que nos muestra es cómo se repiten las entidades federativas en cada capa, reforzando la conclusión presentada anteriormente  a partir de un simple vistazo a los mapas, pero ahora con números.
 
-Conclusiones
+## Conclusiones
 
 Al analizar los resultados preliminares de la investigación expuesta en el presente a través de los datos y las visualizaciones, se puede confirmar la hipótesis propuesta al inicio del planteamiento del proyecto: existen poblaciones específicas que son las más afectadas por la configuración del país, en casi todos los aspectos, tal es el caso de Chiapas, Oaxaca y Guerrero, que son el común denominador de los estados con mayores carencias. Esto solo reafirma la necesidad de un proyecto para lograr atacar estas carencias específicas en zonas particulares del país. 
 Muchos de los datos expuestos en el trabajo presente son solo la punta del iceberg, y brindan información muy superficial sobre la situación específica de las personas que padecen de pobreza. Sin embargo, siendo completamente consciente de la urgencia para revertir la situación a corto plazo se puede implementar un proyecto que se base en la conexión entre los programas sociales del gobierno y los focos de atención más graves que existen en el país. Al mismo tiempo se pueden lograr predicciones sobre poblaciones o zonas puntuales con las que no se cuenta información a partir de los datos ya existentes de familias con situaciones similares en zonas cercanas, ya que como se presentó anteriormente la localización geográfica es un gran predictor para la pobreza.
